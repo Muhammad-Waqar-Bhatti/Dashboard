@@ -1,6 +1,7 @@
 import React,{ Component } from 'react'
 import './dashboard.css';
 import WidgetBar from './widgetBar';
+import WidgetDoughnut from './widgetDoughnut';
 import WidgetText from './widgetText';
 
 class Dashboard extends Component {
@@ -34,6 +35,7 @@ class Dashboard extends Component {
          <div>
              <WidgetText title="Title" value="190" descr="Very good" />
              <WidgetBar title="WidgetBar" data={chartData}/>
+             <WidgetDoughnut title="widgetDoughnut" data={chartData}/>
         </div> 
         );
     }

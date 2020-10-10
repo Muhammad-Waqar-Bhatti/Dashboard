@@ -14,18 +14,17 @@ import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
 
-const widgetBar  = (props) => {
+const widgetDoughnut = (props) => {
         
     const chartConfigs = {
-        type: "bar2d",
+        type: "doughnut2d",
         width: "100%",
         height: "125",
-        
         dataFormat: "json",
         dataSource: {
        
         chart: {
-            numberSuffix: "K",
+            
             bgColor: "#2a2a2a", 
             theme: "fusion"               
         },
@@ -48,4 +47,4 @@ const widgetBar  = (props) => {
      );
 }
  
-export default widgetBar ;
+export default widgetDoughnut ;
